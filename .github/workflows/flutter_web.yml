@@ -19,14 +19,3 @@ jobs:
           channel: "stable"
       - run: flutter pub get
       - run: flutter build web --web-renderer html -vv --no-tree-shake-icons --pwa-strategy none --release
-      - run: |
-          cd build/web
-          git init
-          git config --global user.email 1024120029@qq.com
-          git config --global user.name autumn-moon-py
-          git status
-          git remote add origin https://${{secrets.commit_secret}}@github.com/autumn-moon-py/app_download.git
-          git checkout -b gh-pages
-          git add --all
-          git commit -m "update"
-          git push origin gh-pages -f
