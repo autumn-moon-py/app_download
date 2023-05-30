@@ -5,7 +5,12 @@
             "program": "lib/main.dart",
             "request": "launch",
             "type": "dart",
-			"externalConsole": true, 
+            "args": [
+                "-vv",
+                "--web-port=8080",
+                "--web-hostname=127.0.0.1",
+                "--web-renderer html",
+            ],
         }
     ]
 }
