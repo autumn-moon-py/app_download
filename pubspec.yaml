@@ -1,0 +1,19 @@
+name: app_download
+description: A new Flutter project.
+publish_to: "none"
+version: 1.0.0
+environment:
+  sdk: ">=2.19.2 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.1.0
+  url_launcher: ^6.1.10
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
