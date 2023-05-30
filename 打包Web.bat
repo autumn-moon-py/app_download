@@ -1,1 +1,1 @@
-flutter build web --web-renderer html -vv --no-tree-shake-icons --pwa-strategy none --release
+flutter build web --web-renderer canvaskit -vv --no-tree-shake-icons --pwa-strategy none --release  --dart-define=FLUTTER_WEB_CANVASKIT_URL=https://unpkg.zhimg.com/canvaskit-wasm@0.24.0/bin/
