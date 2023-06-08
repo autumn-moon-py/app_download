@@ -47,9 +47,16 @@ class _HomeState extends State<Home> {
   }
 
   download() async {
-    final Uri url =
-        Uri.parse('https://www.subrecovery.top/app/app-release.apk');
-    await launchUrl(url, mode: LaunchMode.externalApplication);
+    if (version.isNotEmpty) {
+      Uri url =
+          Uri.parse('https://www.subrecovery.top/app/app-release-$version.apk');
+      await launchUrl(url, mode: LaunchMode.externalApplication);
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text('下载失败,请稍后再试'),
+        duration: const Duration(seconds: 2),
+      ));
+    }
   }
 
   @override
