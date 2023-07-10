@@ -116,10 +116,9 @@ class Top extends StatelessWidget {
                   children: [
                 Text('异次元通讯',
                     style: TextStyle(fontSize: 20, color: Colors.white)),
-                Text('次元复苏-秋月完美还原',
+                Text('秋月完美还原',
                     style: TextStyle(fontSize: 13, color: Colors.white))
               ])),
-          DownloadButton(onPressed: () => download('')),
           Container(
               padding: EdgeInsets.only(bottom: 15),
               child: IconButton(
