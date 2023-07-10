@@ -1,1 +1,1 @@
-flutter build web --web-renderer html -vv --no-tree-shake-icons --pwa-strategy none --release
+flutter build web --web-renderer html -vv --no-tree-shake-icons --pwa-strategy none
